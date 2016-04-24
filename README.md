@@ -1,7 +1,7 @@
 # NCE
 LOI Guide is [here] (http://www.nce-rce.gc.ca/Competitions-Competitions/Current-EnVigueur/NCEIKTP-SITCRCE-2017/LOIGuide-GuideLI_eng.asp)
 
-Idea for a name!  "CHORUS" (Collaborative Habitat Obseravation, Reasoning and Unifying System )
+Idea for a name!  "CHORUS" (Collaborative Heterogenous Observation, Reasoning and Unifying System )
 
 Powerpoint from webinar we missed is [here] (http://www.nce-rce.gc.ca/Competitions-Competitions/Current-EnVigueur/NCEIKTP-SITCRCE-2017/Webinar-Webinaire_eng.pptx)
 Notes:
