@@ -6,3 +6,21 @@ development of interoperability tools and standard
 
 identification of infrastructure partners (google, amazon, microsoft):
 where will the data go, how to get computing, how to put it all together
+
+
+The objective of CHORUS would be to create a collaborative, international development environment for algorithms and tools designed to harvest information from shared earth observation data repositories. Sharing applications within this environment has the following advantages:
+
+	It allows the system to move the code to the data, which speeds up the processing and reduces the cost;
+  It can make the applications available to other clients and users;
+  It encourages collaboration within the CHORUS community, possibly including crowd-sourcing.
+
+Tasks will include:
+Developing standard workflow practices: for example, users first find data through the use of the catalog API, then assign the selected dataset to a working set, and then launch individual tasks/algorithms or a chained set of tasks/algorithms.
+Designing automated and efficient mechanisms to deploy algorithms and applications as tasks within the system.  These would for example take advantage of Hadoop and Spark for mass batch processing and analysis.
+Automatically selecting CPU or GPU (CUDA) optimized code for analysis tasks.
+Exploring strategies such as containerized runtime virtualization (for example using Docker) to run algorithms at scale through the CHORUS environment.
+Automating how algorithms can be re-factored for speed, for example through feature engineering and with reference to the machine learning literature.  
+Assessing the trade-off space between standardization of workflows and optimization of workflows for data throughput, with reference to various classes of problems.
+Designing and optimizing the user experience for interacting with and sharing workflow containers within the ecosystem developers and users.
+Experimenting with “cloud sourcing” of applications.  This might for example use a revenue-sharing model similar to Apple’s “App Store”.
+
