@@ -1,40 +1,85 @@
-gathering of existing tools: SEDRIS, HLA, VO, MAST interface
 
-gathering of data sets and algorithms (new stakeholders)
-
-development of interoperability tools and standard
-
-identification of infrastructure partners (google, amazon, microsoft):
-where will the data go, how to get computing, how to put it all together
-
-
-
-The objective of CHORUS would be to create a collaborative, international development environment for algorithms and tools designed to harvest information from shared earth observation data repositories. Sharing applications within this environment has the following advantages:
-
+The objective of CHORUS would be to create a collaborative,
+international development environment for algorithms and tools
+designed to harvest information from shared earth observation data
+repositories. Sharing applications within this environment has the
+following advantages:
 \begin{enumerate}
-	\item It allows the system to move the code to the data, which speeds up the processing and reduces the cost;
-	\item It can make the applications available to other clients and users;
-	\item It encourages collaboration within the CHORUS community, possibly including crowd-sourcing.
+	\item It allows the system to move the code to the data, which
+          speeds up the processing, and reduces the cost;
+        \item It will enable model testing on private datasets without
+	\item It can make the applications available to other clients
+          and users;
+	\item It encourages collaboration within the CHORUS community,
+          possibly including crowd-sourcing.
 \end{enumerate}
 
 Tasks will include:
 \begin{enumerate}
-	\item Developing standard workflow practices: for example, users first find data through the use of the catalog API, then assign the selected dataset to a working set, and then launch individual tasks/algorithms or a chained set of tasks/algorithms.
-	\item Designing automated and efficient mechanisms to deploy algorithms and applications as tasks within the system.  These would for example take advantage of Hadoop and Spark for mass batch processing and analysis.
-	\item Automatically selecting CPU or GPU (CUDA) optimized code for analysis tasks.
-	\item Exploring strategies such as containerized runtime virtualization (for example using Docker) to run algorithms at scale through the CHORUS environment.
-	\item Automating how algorithms can be re-factored for speed, for example through feature engineering and with reference to the machine learning literature.  
-	\item Assessing the trade-off space between standardization of workflows and optimization of workflows for data throughput, with reference to various classes of problems.
-	\item Designing and optimizing the user experience for interacting with and sharing workflow containers within the ecosystem developers and users.
-	\item Experimenting with “cloud sourcing” of applications.  This might for example use a revenue-sharing model similar to Apple’s “App Store”.
+	\item Developing standard workflow practices: for example,
+          users first find data through the use of the catalog API,
+          then assign the selected dataset to a working set, and then
+          launch individual tasks/algorithms or a chained set of
+          tasks/algorithms.
+	\item Designing automated and efficient mechanisms to deploy
+          algorithms and applications as tasks within the system.
+          These would for example take advantage of Hadoop and Spark
+          for mass batch processing and analysis.
+	\item Automatically selecting CPU or GPU (CUDA) optimized code
+          for analysis tasks.
+	\item Exploring strategies such as containerized runtime
+          virtualization (for example using Docker) to run algorithms
+          at scale through the CHORUS environment.
+	\item Automating how algorithms can be re-factored for speed,
+          for example through feature engineering and with reference
+          to the machine learning literature.
+	\item Assessing the trade-off space between standardization of
+          workflows and optimization of workflows for data throughput,
+          with reference to various classes of problems.
+	\item Designing and optimizing the user experience for
+          interacting with and sharing workflow containers within the
+          ecosystem developers and users.
+	\item Experimenting with ``cloud sourcing'' of applications.
+          This might for example use a revenue-sharing model similar
+          to Apple's ``App Store''.
 \end{enumerate}
 
+The vision for this project is to provide critical new capabilities
+based on what is now redibly available Earth Observation datasets.
+The goal is to take CHORUS to a stage where the technology is ready to
+be commercialized by industrial partners. Modern constellations of
+commercial surveillance satellites that are now being developed are of
+great interest to both civilian and defence agencies around the world.
+Such constellations will consist of many satellites with frequent
+revisit capability and will generate huge amounts of data.  To meet
+the requirements of many users, those high volumes of data must first
+be translated into geometrically and radiometrically corrected
+imagery, analysed to extract the embedded information, and then
+delivered around the world in minutes.  This capability can only be
+achieved through Cloud Computing on systems such as CHORUS.
 
-The vision for this project is to provide critical new capabilities based on what is now redibly available Earth Observation datasets.  The goal is to take CHORUS to a stage where the technology is ready to be commercialized by industrial partners. Modern constellations of commercial surveillance satellites that are now being developed are of great interest to both civilian and defence agencies around the world.  Such constellations will consist of many satellites with frequent revisit capability and will generate huge amounts of data.  To meet the requirements of many users, those high volumes of data must first be translated into geometrically and radiometrically corrected imagery, analysed to extract the embedded information, and then delivered around the world in minutes.  This capability can only be achieved through Cloud Computing on systems such as CHORUS.
+This work builds on existing Geospatial Cloud Platforms and tools that
+currently enable the ability to generate information products suitable
+for such tasks as search and rescue and related defense applications
+that include big data analytics applications.  In addition, the IP
+that is developed will have high commercialization potential and the
+technology will be taken to a stage that it is ready to be
+commercialized by industrial partners.
 
-This work builds on existing Geospatial Cloud Platforms and tools that currently enable the ability to generate information products suitable for such tasks as search and rescue and related defense applications that include big data analytics applications.   In addition, the IP that is developed will have high commercialization potential and the technology will be taken to a stage that it is ready to be commercialized by industrial partners. 
 
-The most critical metric for success will be the engagment factor from the mulitple stakeholders involved.  If CHORUS is successful, then it will attract additional datasets, algorithms, and information products from all of the knowledge domains involved. This method of crowd sourcing will also identify internationally-important knowledge gaps and the shared platform will be the foundation upon which we can build new collaborations. 
+The most critical metric for success will be the engagment factor from
+the mulitple stakeholders involved.  If CHORUS is successful, then it
+will attract additional datasets, algorithms, and information products
+from all of the knowledge domains involved. This method of crowd
+sourcing will also identify internationally-important knowledge gaps
+and the shared platform will be the foundation upon which we can build
+new collaborations.
  
-Development of CHORUS will adhere to an Agile Methodology. Agile iterative approach that builds software incrementally from the start of the project, instead of trying to deliver a completed platform near the end of 4 years.  In each iteration, stakeholders will be asked to come to a consensus on key elements of functionality to support. This approach will allow the project to most easily adapt to new opportunities and unexpected challenges.
+Development of CHORUS will adhere to an Agile Methodology. Agile
+iterative approach that builds software incrementally from the start
+of the project, instead of trying to deliver a completed platform near
+the end of 4 years.  In each iteration, stakeholders will be asked to
+come to a consensus on key elements of functionality to support. This
+approach will allow the project to most easily adapt to new
+opportunities and unexpected challenges.
 
