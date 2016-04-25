@@ -2,7 +2,7 @@
 LOI Guide is [here] (http://www.nce-rce.gc.ca/Competitions-Competitions/Current-EnVigueur/NCEIKTP-SITCRCE-2017/LOIGuide-GuideLI_eng.asp)
 
 Idea for a name!  "CHORUS" (music to our ears?!)
-* Collaborative Heterogenous Observation, Reasoning and Unifying System
+* Collaborative Heterogeneous Observation, Reasoning and Unifying System
 * Collecting and Harvesting Observable Relationships across a Universal System
 * ...
 
