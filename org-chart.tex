@@ -1,0 +1,40 @@
+\begin{tikzpicture}[
+  level 1/.style={sibling distance=150mm},
+  edge from parent/.style={->,draw},
+  >=latex,
+  every node/.style={basic}
+  ]
+
+% root
+\mynode{root}{yvonne}{Yvonne Coady}{Executive Officer}{}{ycoady@gmail.com}
+
+% The first level
+\mynode[below left= of root]{c1}{jeremy}{Jeremy Heyl}{Group Relations}{}{heyl@phas.ubc.ca}
+\mynode[below right= of root]{c2}{yvonne}{Yvonne Coady}{Software Lead}{}{ycoady@gmail.com}
+
+\begin{scope}[node distance=-\pgflinewidth and 1cm]
+\mynode[below = 10pt of c1, xshift=15pt]{c11}{tania}{Tania Lado Insua}{Geophysics}{}{tinsua@uvic.ca}
+\mynode[below = 10pt of c11]{c12}{reka}{R\'eka Gustafson}{Public Health}{}{reka.gustafson@vch.ca}
+\mynode[below = 10pt of c12]{c13}{fberna}{Francesco Berna}{Archaeology}{}{francesco\_berna@sfu.ca}
+\mynode[below = 10pt of c13]{c14}{flor}{Russ Baker}{Remote Sensing}{}{}
+\mynode[below = 10pt of c14]{c15}{flor}{New People}{New Domains}{}{}
+
+\mynode[below = 10pt of c2, xshift=15pt]{c21}{flor}{David Schade}{Interoperablity}{}{David.Schade@nrc-cnrc.gc.ca}
+\mynode[below = 10pt of c21]{c22}{flor}{Peter Madden}{Infrastructure}{}{anywhere@home.com}
+\mynode[below = 10pt of c22]{c23}{flor}{Duncan Suttles}{Immersive Interface}{}{anywhere@home.com}
+\mynode[below = 10pt of c23]{c24}{flor}{Karen Levay}{Scientific Interface}{}{anywhere@home.com}
+
+\end{scope}
+
+% lines from root to level 1
+\draw (root.south) -- ++(0,-13pt) -| (c1.north);
+\draw (root.south) -- ++(0,-13pt) -| (c2.north);
+
+% lines from each level 1 node to every one of its "children"
+\foreach \value in {1,...,5}
+  \draw[->] ([xshift=6pt]c1.south west) |- (c1\value.west);
+
+\foreach \value in {1,...,4}
+  \draw[->] ([xshift=6pt]c2.south west) |- (c2\value.west);
+
+\end{tikzpicture}

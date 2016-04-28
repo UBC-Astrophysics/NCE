@@ -3,18 +3,31 @@
 \usepackage[OT1, T1]{fontenc} %use TeX encoding then Type 1
 \usepackage{graphicx}
 \usepackage{supertight}
-\usepackage{hyperref}
-\usepackage[square]{natbib}
-\newcommand{\mn}{{\it MNRAS}}
-\newcommand{\mnras}{\mn}
-\newcommand{\aj}{{\it AJ}}
-\newcommand{\apj}{{\it ApJ}}
-\newcommand{\apjl}{{\it ApJL}}
-\newcommand{\prl}{{\it PRL}}
-\newcommand{\pra}{{\it PRA}}
-\newcommand{\prd}{{\it PRD}}
-\newcommand{\pre}{{\it PRE}}
 \renewcommand{\baselinestretch}{0.97}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
+\usepackage[
+  colorlinks=true,
+  urlcolor=cyan!70!black
+  ]{hyperref}
+
+\tikzset{
+basic/.style={
+  draw, 
+  text width=4.5cm,
+  minimum height=40pt, 
+  font=\sffamily,
+  inner sep=0pt,
+  },
+}
+\newcommand\mynode[7][]{
+  \node[#1] (#2) 
+  {\parbox{42pt}{%
+      \includegraphics[height=40pt,width=40pt]{#3}}%
+    \parbox{200pt}{#4\\[.4ex]#5\\\footnotesize\texttt{#6}\ \url{#7}}%
+  };
+}
+
 \begin{document}
 \pagestyle{myheadings}
 \markright{Y. Coady (278218): CHORUS}
@@ -44,5 +57,9 @@
 \section{ Management and Governance }
 
 \input{management}
+
+\newpage
+
+\input{org-chart}
 
 \end{document}
